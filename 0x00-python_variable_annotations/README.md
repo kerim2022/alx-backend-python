@@ -50,7 +50,8 @@ Write a type-annotated function concat that takes a string str1 and a string str
 
 
     
-```  2. Basic annotations - floor
+```
+2. Basic annotations - floor
 ```    
 
 Write a type-annotated function floor which takes a float n as argument and returns the floor of the float.  
