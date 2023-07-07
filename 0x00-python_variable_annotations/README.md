@@ -59,7 +59,13 @@ Write a type-annotated function to_str that takes a float n as argument and retu
     
 4. Define variables  
 
-Define and annotate the following variables with the specified values:  
+Define and annotate the following variables with the specified values: 
+```
+a, an integer with a value of 1
+pi, a float with a value of 3.14
+i_understand_annotations, a boolean with a value of True
+school, a string with a value of “Holberton”
+```  
 
     
 5. Complex types - list of floats  
@@ -115,13 +121,31 @@ Given the parameters and the return values, add type annotations to the function
 
 Hint: look into TypeVar
 
+```
 def safely_get_value(dct, key, default = None):
     if key in dct:
         return dct[key]
     else:
-        return default  
+        return default
+```  
 
     
 12. Type Checking  
 
-Use mypy to validate the following piece of code and apply any necessary changes.  
+Use mypy to validate the following piece of code and apply any necessary changes.   
+```
+def zoom_array(lst: Tuple, factor: int = 2) -> Tuple:
+    zoomed_in: Tuple = [
+        item for item in lst
+        for i in range(factor)
+    ]
+    return zoomed_in
+
+
+array = [12, 72, 91]
+
+zoom_2x = zoom_array(array)
+
+zoom_3x = zoom_array(array, 3.0)
+```
+
