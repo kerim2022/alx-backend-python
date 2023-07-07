@@ -88,20 +88,25 @@ Write a type-annotated function make_multiplier that takes a float multiplier as
     
 9. Let's duck type an iterable object  
 
-Annotate the below function’s parameters and return values with the appropriate types  
+Annotate the below function’s parameters and return values with the appropriate types    
 
-
+```
+def element_length(lst):
+    return [(i, len(i)) for i in lst]
+```  
     
 10. Duck typing - first element of a sequence  
 
 Augment the following code with the correct duck-typed annotations:  
 
+```
 # The types of the elements of the input are not know
 def safe_first_element(lst):
     if lst:
         return lst[0]
     else:
-        return None  
+        return None
+```   
 
     
 11. More involved type annotations  
